@@ -1,0 +1,29 @@
+.board {
+  width: 560px;
+  height: 560px;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.board .line-1 .square:nth-child(odd) {
+  background-color: #ffe4c4;
+}
+
+.board .line-1 .square:nth-child(even) {
+  background-color: #964b00;
+}
+
+.board .line-2 .square:nth-child(even) {
+  background-color: #ffe4c4;
+}
+
+.board .line-2 .square:nth-child(odd) {
+  background-color: #964b00;
+}
+
+.square {
+  float: left;
+  width: 70px;
+  height: 70px;
+}
