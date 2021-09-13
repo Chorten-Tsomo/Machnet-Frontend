@@ -1,0 +1,89 @@
+:root {
+    --border: 0.2em solid #738678 ;
+    --padding: 0.5em;
+  }
+  
+  header,
+  nav,
+  main,
+  #Sidebar,
+  #ads,
+  footer{
+    border: var(--border);
+    padding: var(--padding);
+    border-radius: 0.3em;
+  }
+  
+  
+  
+  
+@media (min-width: 320px) {
+    .container{
+      display: grid;
+      grid-template-columns: 98%;
+      row-gap: 2em;
+      grid-template-rows: 0.2fr 0.2fr 19em 0.2fr 0.2fr 0.2fr;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "Sidebar"
+        "ads"
+        "footer";
+    }
+}
+  
+  
+@media (min-width: 720px) {
+    .container{
+      grid-template-columns: 20% 76%;
+      grid-template-rows: 0.2fr 0.2fr 29em 0.2fr;
+      column-gap: 2em;
+      row-gap: 2em;
+      grid-template-areas:
+        "header header"
+        "nav nav"
+        "Sidebar main"
+        "ads footer";
+    }
+}
+  
+  
+@media (min-width: 1200px) {
+    .container{
+      height: 100vh;
+      width: 98vw;
+      grid-template-columns: 0.5fr 3fr 0.5fr;
+      grid-template-rows: 0.2fr 0.2fr 3.1fr 0.2fr;
+      grid-template-areas:
+        "header header header"
+        "Sidebar nav ads"
+        "Sidebar main  ads"
+        "footer footer footer";
+    }
+}
+  
+  
+header {
+    grid-area: header;
+}
+  
+nav {
+    grid-area: nav;
+}
+  
+main {
+    grid-area: main;
+}
+  
+#Sidebar {
+    grid-area: Sidebar;
+}
+  
+#ads {
+    grid-area: ads;
+}
+  
+footer {
+    grid-area: footer;
+}
