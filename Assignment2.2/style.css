@@ -1,0 +1,132 @@
+:root {
+    --block-border: 0.2em solid #738678;
+    --block-margin: 2em;
+    --block-padding: 0.5em;
+  }
+  
+  
+  @media (min-width: 320px) {
+    .wrapper__main {
+      height: 19em;
+    }
+  
+    .wrapper__ads {
+      border: var(--block-border);
+      margin-bottom: var(--block-margin);
+      padding: var(--block-padding);
+      border-radius: 0.3em;
+    }
+  
+    .content__footer,
+    .wrapper__navigation,
+    .primary__ads {
+      display: none;
+    }
+  }
+  
+ 
+  @media (min-width: 820px) {
+    .wrapper__navigation,
+    .primary__ads,
+    .content__footer {
+      display: none;
+    }
+  
+    .wrapper__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .wrapper--primary {
+      flex-direction: row-reverse;
+    }
+  
+    .wrapper--secondary {
+      align-items: flex-start;
+    }
+  
+    .wrapper__main {
+      height: 28em;
+    }
+  
+    .primary__main,
+    .wrapper__footer {
+      width: 70%;
+    }
+  
+    .wrapper__sidebar,
+    .wrapper__ads {
+      width: 20%;
+    }
+  
+    .wrapper__main {
+      margin-left: -1.4em;
+      width: auto;
+    }
+  
+    .wrapper__ads {
+      border: var(--block-border);
+      padding: var(--block-padding);
+      margin: 0;
+    }
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .wrapper__footer,
+    .wrapper__ads,
+    .navigation {
+      display: none;
+    }
+  
+    .wrapper__navigation,
+    .primary__ads,
+    .content__footer {
+      display: block;
+    }
+  
+    .wrapper__sidebar,
+    .primary__ads {
+      width: 10%;
+    }
+  
+    .wrapper__main {
+      width: auto;
+      margin: 0;
+    }
+  
+    .content__footer {
+      margin: 0;
+    }
+  }
+  
+  
+  label {
+    font-size: 1.5em;
+  }
+  
+  .content{
+    border: var(--block-border);
+    margin-bottom: var(--block-margin);
+    padding: var(--block-padding);
+    border-radius: 0.3em;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Glory', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .wrapper__footer,
+  .content__footer {
+    border: var(--block-border);
+    padding: var(--block-padding);
+    border-radius: 0.3em;
+  }
